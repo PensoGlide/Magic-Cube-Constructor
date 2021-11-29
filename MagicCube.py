@@ -1,4 +1,4 @@
-
+import itertools
 
 while True:
     n = input('\nEnter the amount of numbers per side of the cube: ')
@@ -6,7 +6,7 @@ while True:
     try:
         n = int(n)
         if (n-2)%4 == 0 :
-            print( "\n------- This is not yet supported. --------")
+            print( "\n------- This is not yet supported. ---------")
             print( "      Please select another integer.        ")
             print( "--------------------------------------------")
         elif n > 0:
@@ -21,3 +21,19 @@ while True:
         print( "         Please select an integer.          ")
         print( "--------------------------------------------")
         
+
+################################################################################
+# Permutations of each coordinate
+
+permutations = []
+
+vertices = (
+    (v.count(1), v)
+    for v in itertools.product((1, 2, 3), repeat=3)
+)
+for count, vertex in sorted(vertices):
+    permutations.append(vertex)
+
+
+
+#if n % 2 != 0:
