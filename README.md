@@ -1,6 +1,6 @@
-### Magic Cube Calculator ###
+### Magic Cube Constructor ###
 
-This is a simple script meant to be run on the terminal on which the Magic Cube is solved for ***n*** numbers per side. 
+This is a simple script meant to be run on the terminal on which the Magic Cube is constructed for ***n*** numbers per side. 
 
 The magic is not only in the cube, but also in the ability for the user to select ***n***! All you have to do is select a natural number.
 
